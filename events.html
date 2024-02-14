@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="events.css" type="text/css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var button1 = document.getElementById("btn-1");
+            var button2 = document.getElementById("btn-2");
+            var button3 = document.getElementById("btn-3");
+
+            button1.addEventListener('click', function () {
+                localStorage.setItem('action', 'action1');
+            });
+
+            button2.addEventListener('click', function () {
+                localStorage.setItem('action', 'action2');
+            });
+
+            button3.addEventListener('click', function () {
+                localStorage.setItem('action', 'action3');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+         <li class="nav-item">
+            <a href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html">Order</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">About</a>
+          </li>
+         
+          
+        </ul>
+      </nav>
+    <div class="events">
+        <h1 style="color: green; margin: 20px;">Events</h1>
+        <div class="container">
+            <div class="content">
+                <a href="details.html" id="btn-1">
+                    <article class="article">
+                        <img src="events/events-1.jpeg" alt="Image 1">
+                        <h3 class="title">Italia Mia's Birthday!! </h3>
+                        <p class="text">30% off on our best sellers.</p>
+
+                    </article>
+                </a>
+                <a href="details.html" id="btn-2">
+                    <article class="article">
+                        <img src="events/events-2.jpg" alt="Image 1">
+                        <h3 class="title">Happy Wednesday!!</h3>
+                        <p class="text">25% off on bills more than 1000LE.</p>
+                    </article>
+                </a>
+
+                <a href="details.html" id="btn-3">
+                    <article class="article">
+                        <img src="events/events-3.jpeg" alt="Image 1">
+                        <h3 class="title">Free dessert Friday!!</h3>
+                        <p class="text">free desert on every last friday in the month.</p>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <h5>Copyright © www.ItaliaMia.com All Rights Reserved </h5>
+    </div>
+    </div>
+</body>
+
+</html>

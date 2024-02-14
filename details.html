@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="details.css" type="text/css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var action = localStorage.getItem('action');
+
+            if (action === 'action1') {
+                var t = document.getElementById("title");
+                t.innerHTML = "Italia Mia's Birthday!!";
+                var p = document.getElementById("exp");
+                p.innerHTML = "30% off on all our best sellers and the service on your visit on Italia Mias's Birthday, find all our besst sellers on the menu ";
+                var d = document.getElementById("date");
+                d.innerHTML = "🕒 19 December, 10 AM to 6 PM";
+                var i = document.getElementById("i");
+                i.src = "events/events-1.jpeg";
+            } else if (action === 'action2') {
+                var t = document.getElementById("title");
+                t.innerHTML = "Happy Wednesday!!";
+                var p = document.getElementById("exp");
+                p.innerHTML = "25% discount on orders more than 1000LE. every wednesday evening.";
+                var d = document.getElementById("date");
+                d.innerHTML = "🕒 Every wednesday, 4pm to 6 PM";
+                var i = document.getElementById("i");
+                i.src = "events/events-2.jpg";
+            } else if (action === 'action3') {
+                var t = document.getElementById("title");
+                t.innerHTML = "Free dessert Friday!!";
+                var p = document.getElementById("exp");
+                p.innerHTML = "free dessert of you choice on your visit on every last friday of the month!";
+                var d = document.getElementById("date");
+                d.innerHTML = "🕒 last friday of this month , 10 AM to 6 PM";
+                var i = document.getElementById("i");
+                i.src = "events/events-3.jpeg";
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+         <li class="nav-item">
+            <a href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html">Order</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">About</a>
+          </li>
+         
+          
+        </ul>
+      </nav>
+    <div class="details">
+        <div class="container">
+            <div class="content">
+                <h1 style="color: green; font-size: 50px;">Visit</h1>
+                <h1 id="title" style="font-size: 35px;">title name</h1>
+                <h4 id="exp" style="color: rgb(49, 45, 45);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam sollicitudin
+                    pharetra ex, at aliquam velit pellentesque in. Ut consequat consectetur mi, vel sagittis velit
+                    posuere vel.</h4>
+                <p id="date">🕒 19 October, 10 AM to 6 PM </p>
+                <p>📍 6 at 245 Maadi, Cairo, Egypt</p>
+                <button id="btn"><a href="menu.html">go to menu...</a></button>
+            </div>
+            <img id="i" src="#">
+        </div>
+        <div class="end">
+            <h5>Copyright © www.ItaliaMia.com All Rights Reserved </h5>
+        </div>
+    </div>
+</body>
+
+</html>

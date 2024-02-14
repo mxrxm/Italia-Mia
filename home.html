@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head >
+    <meta charset="UTF-8">
+	<title>Italian Food</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100vw;
+			overflow-x: hidden;
+		}
+	</style>
+    <link rel="stylesheet" href="home.css" />
+   
+  </head>
+  <body>
+    <nav>
+        <ul class="nav">
+         <li class="nav-item">
+            <a href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html">Order</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">About</a>
+          </li>
+         
+          
+        </ul>
+      </nav>
+      <section class="section">
+        <header>
+          <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: italic;">Welcome to <br>Italia Mia</h1>
+        </header>
+      </section>
+      <section class="service">
+        <div class="description" style="text-align: center; color:green;">
+            <h1>Your Breakfast,<br>
+            Lunch,<br>
+            and Dinner<br>
+            Here..</h1>
+        </div>
+        <div id="photos">
+          <label  onclick="back()"><img src="home/previous icon.png" alt="previous" id="direction" ></label>
+            <img id="pic" class="meal" src="" alt=""> 
+            <label  onclick="proceed()"><img src="home/next icon.png" alt="next" id="direction" ></label>
+            <div id="direction">
+            
+            
+          </div>
+          
+        </div>
+
+      </section>
+      <section class="sec">
+        <div class="menu">
+        <h2 >Best Dishes</h2>
+        <div id="gallery" >
+        <img id="photo" class="dish" src="" alt="">
+        <h3 id="name" style="font-family: 'Times New Roman', Times, serif;"></h3>
+        <div id="buttons">
+           <button id="btnMenu" onmouseover="green()" onmouseout="white()" >  <a id="btn" href="menu.html">Go To Menu</a></button>
+        </div> 
+      </div>
+    </div>
+    <div class="sec2" align="center">
+        <h2 >Restaurant's History</h2>
+        <div id="history" align="center" >
+            <img src="home/bg.jpg" alt="Photo of The Restaurant" class="italia">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Illo, incidunt inventore recusandae corrupti hic possimus
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Illo, incidunt inventore recusandae</p>
+        </div>
+        <div>
+            <button id="btnAbout" onmouseover="greenA()" onmouseout="whiteA()" >  <a id="button" href="about.html">Read More...</a></button>
+         </div> 
+    </div>
+        
+    </section>
+    <h1 class="h-primary center">Contact Us</h1>
+    <section id="contact">
+     
+      <div id="conact-pic"><img src="home/contact.jpg" class="cont" alt=""> </div>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Email">Email: </label>
+            <input
+              type="email"
+              name="name"
+              id="email"
+              placeholder="Enter your Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Phone: </label>
+            <input
+              type="phone"
+              name="name"
+              id="phone"
+              placeholder="Enter your phone"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message: </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Enter your Message"
+            ></textarea>
+          </div>
+          <input class="form-submit-button" type="submit" value="Submit"text-align="center">
+        </form>
+      </div>
+    </section>
+
+
+    <div class="end"><h5>Copyright © www.ItaliaMia.com All Rights Reserved </h5></div>
+    <script type="text/javascript" src="home.js"></script>
+    <script type="text/javascript" src="home2.js"></script>
+
+      
+  </body>
+ 
